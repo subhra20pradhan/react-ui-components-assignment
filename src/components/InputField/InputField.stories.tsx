@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react";
 import { InputField } from "./InputField";
 
 const meta: Meta<typeof InputField> = {
-  title: "Components/InputField",
+  title: "Components/InputField", // keep this for InputField
   component: InputField,
   tags: ["autodocs"],
   argTypes: {
@@ -25,7 +25,7 @@ export const Default: Story = {
   },
 };
 
-export const Error: Story = {
+export const Invalid: Story = {
   args: {
     label: "Email",
     placeholder: "Enter your email",
