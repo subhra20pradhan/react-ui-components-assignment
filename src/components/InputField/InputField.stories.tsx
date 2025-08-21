@@ -12,6 +12,7 @@ const meta: Meta<typeof InputField> = {
   },
 };
 export default meta;
+
 type Story = StoryObj<typeof InputField>;
 
 export const Default: Story = {
@@ -48,5 +49,28 @@ export const Password: Story = {
     placeholder: "Enter password",
     type: "password",
     variant: "outlined",
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    label: "Search",
+    placeholder: "Loading...",
+  },
+};
+
+export const Variants: Story = {
+  args: {
+    label: "Name",
+    placeholder: "Enter your name",
+    variant: "outlined", // try "filled" | "ghost"
+  },
+};
+
+export const Sizes: Story = {
+  args: {
+    label: "Comment",
+    placeholder: "Enter text",
+    size: "lg", // try "sm" | "md" | "lg"
   },
 };
